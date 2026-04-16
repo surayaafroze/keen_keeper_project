@@ -8,7 +8,24 @@ const TimeLine = () => {
   const {timeLine} =useContext(timeLineProvider)
 
   return (
-    <div className='bg-base-200 h-screen p-5'>
+
+<div>
+  {timeLine.length===0 ?   <div className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-center p-4">
+    
+  <p className="text-5xl mb-4">💬</p>
+    
+    <h2 className="text-xl font-semibold text-gray-700">
+      No Activity Yet
+    </h2>
+    
+    <p className="text-gray-500 mt-2">
+      Start by calling, texting or video chatting with your friend.
+    </p>
+
+  </div>
+  
+  
+  :<div className='bg-base-200 h-screen p-5'>
      <div className='max-w-7xl mx-auto'>
        <h2 className='text-3xl font-bold'>Timeline</h2>
     <div className='grid grid-cols-1 gap-4 pt-3'>
@@ -31,6 +48,10 @@ const TimeLine = () => {
     </div>
      </div>
     </div>
+  }
+ 
+</div>
+   
   );
 };
 
