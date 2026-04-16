@@ -1,8 +1,10 @@
+import ToggelButton from '@/component/toggle/ToggelButton';
 import Image from 'next/image';
 import React from 'react';
-import { MdOutlineTextsms } from 'react-icons/md';
-import { PiArchiveBold, PiPhoneCallBold, PiVideoCameraBold } from 'react-icons/pi';
+
+import { PiArchiveBold } from 'react-icons/pi';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
+import { HashLoader } from 'react-spinners';
 
 const DetailsPage =async ({params}) => {
 const {id} =await params;
@@ -10,7 +12,15 @@ const res =await fetch ('http://localhost:3000/data.json');
 const friends =await res.json();
 const friend =friends.find((friend,i)=>friend.id== id)
 const {picture,name,days_since_contact,tags,status,email,bio,goal,next_due_date} =friend
-  return (
+  
+if(!friend){
+  return(
+    <div className='flex justify-center items-center h-full'>
+      <HashLoader></HashLoader>
+    </div>
+  );
+}
+return (
     <div className='bg-base-200 min-h-screen pt-10 pb-50 '>
 
     <div className='max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1 md:p-10 p-6 justify-center  gap-4'>
@@ -99,24 +109,10 @@ const {picture,name,days_since_contact,tags,status,email,bio,goal,next_due_date}
       <p className='mt-3 mb-3 text-xl text-[#244D3F] md:text-start text-center pl-5'> Quick Check-In</p>
     
 
-    <div className='grid md:grid-cols-3 grid-cols-1 p-5  gap-4'>
-        <div className='p-5 py-5 bg-base-200 shadow rounded-xl flex flex-col justify-center items-center gap-3'>
-        <PiPhoneCallBold />
-        <p>Call</p>
-      </div>
-
-
-      <div className='p-5 bg-base-200 shadow rounded-xl flex flex-col justify-center items-center gap-3'>
-       <MdOutlineTextsms />
-        <p>Text</p>
-      </div>
-
-
-      <div className='p-5 bg-base-200 shadow rounded-xl flex flex-col justify-center items-center gap-3'>
-     <PiVideoCameraBold />
-        <p>Video</p>
-      </div>
-    </div>
+   {/* ToggelButton */}
+        <div>
+           <ToggelButton friend={friend}></ToggelButton>
+        </div>
       </div>
       </div> 
     </div>
