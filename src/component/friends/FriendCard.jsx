@@ -1,19 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import React from 'react';
 
 const FriendCard = ({friend}) => {
 const {picture,name,days_since_contact,tags,status} =friend
   return (
-   
-    <div className='shadow flex flex-col justify-center items-center p-3 space-y-2 rounded bg-white'>
+   <Link href={`/timeline/${friend.id}`}> 
+   <div className='shadow flex flex-col justify-center items-center p-3 space-y-2 rounded-xl bg-white'>
       <div>
         <Image
-        className='rounded-full'
+        className='rounded-full mt-2'
         src={picture}
         alt={name}
-        width={100}
-        height={100}
+        width={90}
+        height={90}
         >
 
         </Image>
@@ -32,6 +33,8 @@ const {picture,name,days_since_contact,tags,status} =friend
         <span className={`${status==='overdue'?'bg-[#EFAD44] text-white':status==='upcoming'?'bg-[#EF4444] text-white':status==='active'?'bg-[#244D3F] text-white':''} px-3 py-1 rounded-full text-[12px] font-medium`}>{status}</span>
       </div>
     </div>
+    </Link>
+   
 
     
   );
