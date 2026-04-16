@@ -11,6 +11,7 @@ const {timeLine,setTimeLine} =useContext(timeLineProvider)
 
 const handelar =(type)=>{
 const newItem ={
+  name:friend,
 type:type,
 time:new Date().toLocaleString()
 };
