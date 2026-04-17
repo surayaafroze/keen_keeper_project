@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-   <div  className='bg-[#244D3F]  text-white '>
-     <div className=' text-center md:p-20 p-10 space-y-5'>
+   <div  className='bg-[#244D3F]  text-white mt-6'>
+     <div className=' text-center md:p-10 p-10 space-y-5'>
       <h1 className='md:text-7xl text-4xl font-bold mt-7'>KeenKeeper</h1>
       <p className='text-[14px] font-light text-[#FFFFFF80]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
       <p className='text-xl'>Social Links</p>
@@ -47,7 +47,7 @@ const Footer = () => {
   </nav>
    
     </div>
- <div className='md:p-6 p-3 flex md:flex-row flex-col md:justify-between justify-center items-center border-t mx-3 border-[#1A886270]'>
+ <div className='md:p-4 p-3 flex md:flex-row flex-col md:justify-between justify-center items-center border-t mx-3 border-[#1A886270]'>
     <p className=' p-3  text-[#CCCCCC50] text-[13px]'>© 2026 - KeenKeeper. All rights reserved.
 
 </p>

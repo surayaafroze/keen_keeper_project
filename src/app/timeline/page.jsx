@@ -34,7 +34,7 @@ const filterTimeLine = timeLine.filter(item =>selectedType==='All'?timeLine:item
   </div>
   
   
-  :<div className='bg-base-200 h-screen p-5'>
+  :<div className='bg-base-200 min-h-screen p-5'>
      <div className='max-w-7xl mx-auto'>
        <h2 className='text-3xl font-bold'>Timeline</h2>
 

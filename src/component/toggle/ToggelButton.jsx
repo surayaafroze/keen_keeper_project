@@ -29,7 +29,11 @@ if(type==='Call'){
     <PiPhoneCallBold   />
     <span>{friend.name} is calling</span>
   
-  </div>)
+  </div>,
+{
+position: "top-center",
+autoClose: 1000}  
+)
 }
 else if(type==='Text'){
   toast.success(<div className='flex justify-center items-center gap-2'>
@@ -43,7 +47,10 @@ else if(type==='Text'){
      <MdOutlineTextsms />
     <span>{friend.name} sent a message</span>
   
-  </div>)
+  </div>,
+{
+position: "top-center",
+autoClose: 1000})
 }
 else{
  toast.success(<div className='flex justify-center items-center gap-2'>
@@ -57,7 +64,10 @@ else{
     <PiVideoCameraBold />
     <span>{friend.name} video calling</span>
   
-  </div>)
+  </div>,
+{
+position: "top-center",
+autoClose: 1000})
 }
 }
 

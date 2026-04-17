@@ -2,7 +2,7 @@ import React from 'react';
 import FriendCard from './FriendCard';
 
 const AllFriends =async () => {
-const res =await fetch('http://keen-keeper-project-tau.vercel.app/data.json');
+const res =await fetch('http://keen-keeper-project-kappa.vercel.app/data.json',{cache:'no-store'});
 const friends =await res.json()
 console.log(friends,'frommmmmm')
 

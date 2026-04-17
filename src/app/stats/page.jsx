@@ -22,11 +22,16 @@ const data = [
 ];
 
   return (
-    <div>
-      <h2 className='text-3xl font-bold'>All stats are here</h2>
+    <div className='min-h-screen  bg-base-200'>
+    <div className='max-w-7xl mx-auto p-5'>
+       <div>
+       <h2 className='md:text-5xl text-3xl font-bold text-[#1F2937]'>Friendship Analytics</h2>
+     </div>
+   <div className='bg-white shadow rounded-2xl p-7 mt-6'>
+       <h2 className='text-3xl font-bold text-[#244D3F]'>By Interaction Type</h2>
 
-      <div className='flex justify-center items-center'>
-        <PieChart style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
+      <div className='flex justify-center items-center '>
+        <PieChart style={{ width: '350px', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
       <Pie
         data={data}
         innerRadius="80%"
@@ -43,6 +48,8 @@ const data = [
       <Tooltip></Tooltip>
     </PieChart>
       </div>
+   </div>
+    </div>
     </div>
   );
 };

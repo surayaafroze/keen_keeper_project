@@ -11,19 +11,19 @@ relationships that matter most.</p>
 <button className='btn bg-[#244D3F] text-white'><FaPlus></FaPlus> Add a Friend</button>
    </div> 
 <div className='flex md:flex-row flex-col md:justify-between gap-5 justify-center items-center mt-10'>
-  <div className=' shadow rounded w-65 h-34 items-center flex flex-col justify-center'>
+  <div className=' shadow-xl rounded-2xl w-65 h-34 items-center flex flex-col justify-center bg-white'>
     <p className='text-[#244D3F] text-center'>10</p>
     <p className='text-[#64748B] text-center'>Total Friends</p>
   </div>
-  <div className=' shadow rounded w-65 h-34 items-center flex flex-col justify-center'>
+  <div className=' shadow-xl rounded-2xl w-65 h-34 items-center flex flex-col justify-center bg-white'>
     <p className='text-[#244D3F] text-center'>3</p>
     <p className='text-[#64748B] text-center'>On Track</p>
   </div>
-  <div className=' shadow rounded w-65 h-34 items-center flex flex-col justify-center'>
+  <div className=' shadow-xl rounded-2xl w-65 h-34 items-center flex flex-col justify-center bg-white'>
     <p className='text-[#244D3F] text-center'>6</p>
     <p className='text-[#64748B] text-center'>Need Attention</p>
   </div>
-   <div className=' shadow rounded w-65 h-34 items-center flex flex-col justify-center'>
+   <div className=' shadow-xl rounded-2xl w-65 h-34 items-center flex flex-col justify-center bg-white'>
     <p className='text-[#244D3F] text-center'>12</p>
     <p className='text-[#64748B] text-center'>Interactions This Month</p>
   </div>
