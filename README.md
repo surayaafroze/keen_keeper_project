@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🌱 KeenKeeper — Keep Your Friendships Alive
 
-First, run the development server:
+🔗 Live Site: https://keen-keeper-project-kappa.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Modern professional website collage](https://copilot.microsoft.com/th/id/BCO.28e564ea-fd4c-470e-a34e-816678dc393b.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📌 Project Description
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+KeenKeeper is a simple and meaningful web application designed to help users maintain and nurture their friendships. It allows users to track interactions, set communication goals, and stay connected with friends through a clean and interactive interface.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ⚛️ Next.js (App Router)
+- 🎨 Tailwind CSS
+- 📊 Recharts (for analytics chart)
+- 🔔 React Toastify (for notifications)
+- 📦 React Icons
+- 🎨 Daisy Ui
+- ✨ React Spinear
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👫 Friend Management
+- Displays all friends in a responsive card layout
+- Shows important details like:
+  - Name
+  - Picture
+  - Tags
+  - Status (overdue / almost due / on-track)
+- Clickable cards to view detailed friend information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 👤 Friend Details Page
+- Two-column layout
+- Shows:
+  - Profile info (image, name, email, bio, tags)
+  - Stats (days since contact, goal, next due date)
+- Quick Check-In system:
+  - 📞 Call
+  - 💬 Text
+  - 🎥 Video
+- Adds interaction to timeline instantly
+- Toast notification on every action
+
+---
+
+### 📜 Timeline Page
+- Displays all interaction history
+- Shows:
+  - Date & time
+  - Interaction type (Call / Text / Video)
+  - Friend name
+- Includes filter system:
+  - All
+  - Call
+  - Text
+  - Video
+
+---
+
+### 📊 Stats Page (Analytics)
+- Pie chart showing:
+  - Total Calls
+  - Total Texts
+  - Total Videos
+- Built using Recharts
+
+---
+
+### 🧭 Navigation System
+- Navbar with:
+  - Home
+  - Timeline
+  - Stats
+- Active route highlighting
+
+---
+
+### 📱 Fully Responsive Design
+- Works on:
+  - Mobile
+  - Tablet
+  - Desktop
+
+---
+
+### ⚙️ Additional Features
+- 🔄 Loading spinner while fetching data
+- ❌ Custom 404 page for invalid routes
+- 🔔 Toast notifications for interactions
+- ♻️ No reload error after deployment
+
+---
+
+## 📂 Data Source
+
+- Static JSON file (`data.json`) stored in the public folder
+- Contains realistic friend data
+
+---
+
