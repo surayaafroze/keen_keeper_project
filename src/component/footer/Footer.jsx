@@ -54,11 +54,11 @@ const Footer = () => {
 
  <nav className='flex  md:gap-3 gap-1 items-center text-[#CCCCCC50] text-[13px]'>
     
-    <a class="link link-hover">Privacy Policy
+    <a className="link link-hover">Privacy Policy
 </a>
-    <a class="link link-hover">Terms of Service
+    <a className="link link-hover">Terms of Service
 </a>
-    <a class="link link-hover">Cookies
+    <a className="link link-hover">Cookies
 </a>
     
   </nav>

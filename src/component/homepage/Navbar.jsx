@@ -14,6 +14,7 @@ const Navbar = () => {
       <ul className='flex md:justify-between justify-center lg:gap-10 md:gap-7 gap-3 items-center'>
 
       <MyNavLink  href='/'><RiHome2Line></RiHome2Line>  Home</MyNavLink>
+     
         
       <MyNavLink href='/timeline'>< RiTimeLine></RiTimeLine>  Timeline</MyNavLink>
        

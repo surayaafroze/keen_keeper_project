@@ -5,7 +5,16 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import { PiPhoneCallBold, PiVideoCameraBold } from 'react-icons/pi';
 
 const TimeLine = () => {
-  const {timeLine} =useContext(timeLineProvider)
+  const {timeLine,setTimeLine,selectedType,setSelectedType} =useContext(timeLineProvider)
+
+  
+  const clickButton=(type)=>{
+  setSelectedType(type)
+
+}
+const filterTimeLine = timeLine.filter(item =>selectedType==='All'?timeLine:item.type===selectedType)
+
+
 
   return (
 
@@ -28,8 +37,20 @@ const TimeLine = () => {
   :<div className='bg-base-200 h-screen p-5'>
      <div className='max-w-7xl mx-auto'>
        <h2 className='text-3xl font-bold'>Timeline</h2>
+
+       <div>
+        <div className="dropdown dropdown-right dropdown-center">
+  <div tabIndex={0} role="button" className="btn m-1"><span > {selectedType}</span></div>
+  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li onClick={()=>clickButton('All')}><a>All</a></li>
+    <li onClick={()=>clickButton('Call')}><a>Call</a></li>
+    <li onClick={()=>clickButton('Text')}><a>Text</a></li>
+    <li onClick={()=>clickButton('Video')}><a>Video</a></li>
+  </ul>
+</div>
+       </div>
     <div className='grid grid-cols-1 gap-4 pt-3'>
-       {timeLine.map((iFriend,i)=><div 
+       {filterTimeLine.map((iFriend,i)=><div 
      key={i}
      className=' '
      >

@@ -8,7 +8,7 @@ import { HashLoader } from 'react-spinners';
 
 const DetailsPage =async ({params}) => {
 const {id} =await params;
-const res =await fetch ('http://localhost:3000/data.json');
+const res =await fetch ('http://keen-keeper-project-tau.vercel.app/data.json');
 const friends =await res.json();
 const friend =friends.find((friend,i)=>friend.id== id)
 const {picture,name,days_since_contact,tags,status,email,bio,goal,next_due_date} =friend
